@@ -1,0 +1,24 @@
+import platform
+import datetime
+
+def get_system_info():
+    now = datetime.datetime.now()
+    info = f"Timestamp: {now}\n"
+    info += f"OS: {platform.system()}\n"
+    info += f"Machine: {platform.machine()}\n"
+    info += f"Python Version: {platform.python_version()}\n"
+    return info
+
+def save_to_log(info):
+    with open("system_log.txt", "a") as f:
+        f.write(info)
+        f.write("-" * 40 + "\n")
+
+try:
+    data = get_system_info()
+    print(data)
+    save_to_log(data)
+    print("Log saved successfully!")
+except Exception as e:
+    print("Something went wrong:", e)
+    
