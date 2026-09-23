@@ -1,11 +1,11 @@
 # System Info Logger
 
-Ek simple Python script jo system ki basic information (OS, machine type, Python version) collect karke ek log file (`system_log.txt`) mein save karti hai.
+A simple python script that collects the basic information (OS,machine type, python version) and saves it in log file('system_log.txt').
 
 ## Features
-- OS aur machine architecture detect karta hai
-- Python version print karta hai
-- Result ko text file mein append karta hai
+- Detects the OS and machine architecture
+- Prints the python version.
+- Appends the result in text file
 
 ## How to run
 ```bash
